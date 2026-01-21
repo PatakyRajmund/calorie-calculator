@@ -1,0 +1,105 @@
+html {
+    background-color: #1e1e1e;
+    color: rgb(224, 224, 224);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+}
+
+body {
+    font-size: large;
+}
+
+.flex-item {
+    flex: 1;
+}
+
+.gender {
+    padding-left: 1%;
+    display: inline;
+}
+
+form label {
+    padding-left: 1%;
+}
+
+table {
+    margin: auto;
+    width: 80%;
+    margin-bottom: 2%;
+}
+
+table,
+th,
+td {
+    border: 1px solid white;
+    border-collapse: collapse;
+    padding: 10px;
+    text-align: center;
+}
+
+h1 {
+    font-size: xx-large;
+    border-bottom: 1px solid white;
+    padding-bottom: 1%;
+}
+
+input[type=radio] {
+    cursor: pointer;
+    margin-left: 2%;
+}
+
+input[type=submit] {
+    cursor: pointer;
+    padding: 12px 0px;
+    font-size: large;
+    width: 80%;
+    margin-left: 10%;
+    background-color: rgb(240, 240, 240);
+    color: black;
+}
+
+input[type=number],
+select {
+    padding: 12px 3px;
+    margin: 8px 0px;
+    margin-left: 1%;
+    border-radius: 4px;
+    background-color: antiquewhite;
+    font-size: large;
+    width: 96%;
+    color: black;
+}
+
+@media only screen and (max-width: 700px) {
+    body {
+        font-size: medium;
+    }
+
+    .flex-container {
+        flex-direction: column;
+    }
+
+    input[type="number"],
+    input[type="submit"],
+    select,
+    header {
+        font-size: medium;
+    }
+
+    h1 {
+        font-size: larger;
+    }
+}
+
+.selected {
+    /*Only seems to get ahead for mobile web browsers with important*/
+    background-color: rgb(232, 240, 254) !important;
+}

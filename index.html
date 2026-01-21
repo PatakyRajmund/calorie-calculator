@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Calorie Calculator</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="/styles/style.css">
+</head>
+
+<header>
+    <h1>Calorie Calculator</h1>
+    <p>This website was made to help you calculate how many calories you have to intake to get to your weight goal.</p>
+</header>
+
+<body>
+    <div class="flex-container" id="container">
+        <div id="form-div" class="flex-item">
+            <form id="data-input">
+                <p class="gender">Gender:</p><br>
+                <input type="radio" id="male" name="gender" value="male" required>
+                <label for="male">Male</label> <br>
+                <input type="radio" id="female" name="gender" value="female" required>
+                <label for="female">Female</label><br>
+                <label for="age">Age:</label> <br>
+                <input type="number" required id="age" name="age" min="15" max="85"
+                    placeholder="In years (for example: 45)"> <br>
+                <label for="weight">Weight:</label> <br>
+                <input type="number" required id="weight" name="weight" placeholder="In kilogramms (for example: 60)">
+                <br>
+                <label for="height">Height:</label> <br>
+                <input type="number" required id="height" name="height" min="130"
+                    placeholder="In centimeters (for example: 160)"> <br>
+                <label for="weight-goal">Your Weight Goal:</label> <br>
+                <input type="number" required id="weight-goal" name="weight-goal" placeholder="In kilogramms"> <br>
+                <label for="select-activity">How active are you?</label> <br>
+                <select name="activity" id="select-activity">
+                    <option value="none">No exercise</option>
+                    <option value="light" selected>Lightly active (1-3 Light exercises/week)</option>
+                    <option value="moderate">Moderately active (3-5 Moderate exercises/week)</option>
+                    <option value="high">Very active (6-7 Hard exercises/week)</option>
+                    <option value="extra">Extra active (Very hard exercise or physical job)</option>
+                </select> <br>
+                <label for="num-of-weeks">How many weeks to achieve it?</label> <br>
+                <input type="number" required id="num-of-weeks" name="num-of-weeks"
+                    placeholder="Number of weeks (for example: 14)"> <br>
+                <input type="submit" id="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+    <script type="module" src="scripts/calorie-counter.js"></script>
+    <script type="module" src="scripts/formatting.js"></script>
+</body>
+
+</html>
