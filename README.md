@@ -1,4 +1,4 @@
-# Calorie Counter
+# Calorie Calculator
 **The project includes a website that is capable of calculating the needed daily calorie intake for your weight goal based on your height, gender, age, weight and activity level. It calculates everything on device (with JS).**
 
 The website is _mostly_ responsive (handles different screen sizes appropriately), and has limited validation for input data (uses HTMLs built in solution to tell what type of data one expects).
